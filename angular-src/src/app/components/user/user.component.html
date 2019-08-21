@@ -1,0 +1,14 @@
+<h1>Hello world</h1>
+<h2> {{name}} </h2>
+<button (click)="onClick">Button</button>
+
+<h1>Hobbies</h1>
+<form (submit)="addHobby(hobby.value)">
+    <div>
+        <label for="hobby">Hobby:</label>
+        <input type="text" #hobby>
+    </div>
+</form>
+<ul>
+    <li *ngFor="let hobby of hobbies">{{hobby}}</li>
+</ul>
